@@ -5,13 +5,13 @@ Dockerfile for the Stanford CoreNLP server.
 To build the docker image for the Stanford CoreNLP Server:  
 ```
 cd docker/stanford-corenlp-server
-docker build -t corenlp ./Dockerfile
+docker build -t corenlp .
 ```
 
 By editing the Dockerfile you can also:
 - Set the number of threads using the THREADS variable
 - Set the ammount of ram using the JAVA_XMX variable
-- Set the port number, using the PORT variable
+- Set the port number using the PORT variable
 
 By default the server uses 2 threads, up to 2GB of memory, and runs on port 9000.
 
